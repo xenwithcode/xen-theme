@@ -1,0 +1,75 @@
+{
+  "name": "xen-theme",
+  "version": "1.0.0",
+  "description": "XEN THEME: a pastel blue-gray dark theme for DeepSeek Harness with a rosé light variant, a complete ANSI palette for code highlighting, JetBrains Mono, a high-contrast mode, editable palette files and a slash command to switch it off.",
+  "license": "MIT",
+  "author": {
+    "name": "XEN THEME contributors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xenwithcode/xen-theme.git"
+  },
+  "homepage": "https://github.com/xenwithcode/xen-theme#readme",
+  "bugs": {
+    "url": "https://github.com/xenwithcode/xen-theme/issues"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.2-rc.3 <0.3.0"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./theme.json": "./theme.json",
+    "./syntax-highlighting.json": "./syntax-highlighting.json",
+    "./styles.css": "./styles.css"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "theme.json",
+    "syntax-highlighting.json",
+    "styles.css",
+    "locale/*.json",
+    "icon.svg",
+    "scripts",
+    "theme-studio",
+    "README.md",
+    "LICENSE"
+  ],
+  "icon": "./icon.svg",
+  "meta": {
+    "title": "XEN THEME",
+    "description": "Pastel blue-gray palette with light, dark and high-contrast modes, ANSI syntax colors and JetBrains Mono."
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "theme",
+    "xen",
+    "ansi",
+    "syntax-highlighting",
+    "dark-mode",
+    "high-contrast",
+    "jetbrains-mono"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  }
+}

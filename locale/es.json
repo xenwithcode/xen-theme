@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "XEN THEME",
+    "description": "Pinta la interfaz web con la paleta oscura azul grisácea pastel de XEN y su variante clara rosada: colores ANSI completos para el resaltado de sintaxis, código en JetBrains Mono, fuentes personalizadas y un modo de alto contraste opcional. Desactívalo con /xen o con la fila XEN THEME en Ajustes → General. Edita theme.json, syntax-highlighting.json o styles.css en la carpeta del plugin y recarga la página para cambiar la paleta; no hace falta recompilar mientras el servidor web sirva el paquete. Solo recolorea tokens de interfaz, el resaltado de bloques de código y la tipografía de lectura: no cambia la paleta ANSI del terminal, el comportamiento de los agentes ni los datos guardados."
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "XEN THEME",
+    "description": "Paints the Web GUI with the XEN pastel blue-gray dark palette and its rosé light variant: complete ANSI syntax colors, JetBrains Mono code, custom fonts and an optional high-contrast mode. Switch it off with /xen or the XEN THEME row in Settings → General. Edit theme.json, syntax-highlighting.json or styles.css in the plugin folder and refresh the page to change the palette; no rebuild is needed while the Web server serves the package. It recolors interface tokens, fenced-code highlighting and reading typography only: it does not change the terminal ANSI palette, agent behavior or stored data."
+  }
+}

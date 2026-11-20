@@ -1,0 +1,488 @@
+{
+  "v": 1,
+  "enabled": true,
+  "overrides": {
+    "--dsw-alias-bg-base": {
+      "light": "#FFF0F5",
+      "dark": "#101113"
+    },
+    "--dsw-alias-bg-layer-1": {
+      "light": "#FFF8FB",
+      "dark": "#101113"
+    },
+    "--dsw-alias-bg-layer-2": {
+      "light": "#FBEEF3",
+      "dark": "#4a4253"
+    },
+    "--dsw-alias-bg-layer-3": {
+      "light": "#F4E7ED",
+      "dark": "#4a4253"
+    },
+    "--dsw-alias-bg-overlay": {
+      "light": "#FFF8FB",
+      "dark": "#101113"
+    },
+    "--dsw-alias-label-primary": {
+      "light": "#101113",
+      "dark": "#D0E0F0"
+    },
+    "--dsw-alias-label-secondary": {
+      "light": "#4A4452",
+      "dark": "#BAC3BF"
+    },
+    "--dsw-alias-label-tertiary": {
+      "light": "#6E6875",
+      "dark": "#A5AAB2"
+    },
+    "--dsw-alias-brand-primary": {
+      "light": "#6F87B5",
+      "dark": "#8FA8CD"
+    },
+    "--dsw-alias-brand-text": {
+      "light": "#101113",
+      "dark": "#101113"
+    },
+    "--dsw-alias-link": {
+      "light": "#4F6B99",
+      "dark": "#8FA8CD"
+    },
+    "--dsw-alias-state-error-primary": {
+      "light": "#A34A3E",
+      "dark": "#D48F83"
+    },
+    "--dsw-alias-state-warn-primary": {
+      "light": "#9E5546",
+      "dark": "#E8A79B"
+    },
+    "--dsw-alias-state-success-primary": {
+      "light": "#2F6B45",
+      "dark": "#BCE7C6"
+    },
+    "--dsw-alias-state-business-primary": {
+      "light": "#4F6B99",
+      "dark": "#8FA8CD"
+    },
+    "--dsw-alias-interactive-bg-hover": {
+      "light": "#4a425314",
+      "dark": "#4a425340"
+    },
+    "--dsw-alias-interactive-bg-active": {
+      "light": "#4a425324",
+      "dark": "#4a425360"
+    },
+    "--dsw-alias-border-l1": {
+      "light": "#4a425326",
+      "dark": "#4a425340"
+    },
+    "--dsw-alias-border-l2": {
+      "light": "#4a425340",
+      "dark": "#4a425360"
+    },
+    "--dsw-alias-border-l3": {
+      "light": "#4a425359",
+      "dark": "#4a425380"
+    },
+    "--dsw-alias-markdown-code-block": {
+      "light": "#FBEEF3",
+      "dark": "#101113"
+    },
+    "--dsw-alias-switch-thumb": {
+      "light": "#101113",
+      "dark": "#D0E0F0"
+    },
+    "--dsw-alias-border-l4": {
+      "light": "#4a425359",
+      "dark": "#4a425380"
+    },
+    "--dsw-alias-label-caption": {
+      "light": "#6E6875",
+      "dark": "#A5AAB2"
+    },
+    "--dsw-alias-label-dimmed": {
+      "light": "#8A8494",
+      "dark": "#8A8494"
+    },
+    "--dsw-alias-label-primary-dimmed": {
+      "light": "#3A3542",
+      "dark": "#BAC3BF"
+    },
+    "--dsw-alias-label-primary-foreground": {
+      "light": "#101113",
+      "dark": "#101113"
+    },
+    "--dsw-alias-label-primary-bluish": {
+      "light": "#3F5C86",
+      "dark": "#B4CBEA"
+    },
+    "--dsw-alias-state-idle-primary": {
+      "light": "#6E6875",
+      "dark": "#A5AAB2"
+    },
+    "--dsw-alias-state-error-secondary": {
+      "light": "#C2675A",
+      "dark": "#E8A79B"
+    },
+    "--dsw-alias-state-warn-secondary": {
+      "light": "#C67C6B",
+      "dark": "#FFF0F5"
+    },
+    "--dsw-alias-state-success-secondary": {
+      "light": "#4C8A62",
+      "dark": "#BCE7C6"
+    },
+    "--dsw-alias-state-business-tertiary": {
+      "light": "#8FA8CD",
+      "dark": "#B4CBEA"
+    },
+    "--dsw-alias-button-primary-fill": {
+      "light": "#6F87B5",
+      "dark": "#8FA8CD"
+    },
+    "--dsw-alias-button-primary-hover": {
+      "light": "#B4CBEA",
+      "dark": "#B4CBEA"
+    },
+    "--dsw-alias-button-primary-dimmed": {
+      "light": "#6F87B580",
+      "dark": "#8FA8CD80"
+    },
+    "--dsw-alias-button-contrast-fill": {
+      "light": "#6F87B5",
+      "dark": "#8FA8CD"
+    },
+    "--dsw-alias-button-elevated-fill": {
+      "light": "#FBEEF3",
+      "dark": "#4a4253"
+    },
+    "--dsw-alias-button-floating-fill": {
+      "light": "#FFF8FB",
+      "dark": "#4a4253"
+    },
+    "--dsw-alias-button-floating-hover": {
+      "light": "#F4E7ED",
+      "dark": "#5A5163"
+    },
+    "--dsw-alias-button-ghost-active-fill": {
+      "light": "#4a425314",
+      "dark": "#4a425340"
+    },
+    "--dsw-alias-button-ghost-active-hover": {
+      "light": "#4a425324",
+      "dark": "#4a425360"
+    },
+    "--dsw-alias-button-ghost-active-border": {
+      "light": "#4a425340",
+      "dark": "#4a425340"
+    },
+    "--dsw-alias-interactive-bg-hover-accent": {
+      "light": "#8FA8CD26",
+      "dark": "#8FA8CD26"
+    },
+    "--dsw-alias-interactive-bg-hover-danger": {
+      "light": "#A34A3E26",
+      "dark": "#D48F8326"
+    },
+    "--dsw-alias-interactive-bg-hover-solid": {
+      "light": "#F4E7ED",
+      "dark": "#4a4253"
+    },
+    "--dsw-alias-markdown-code-block-banner": {
+      "light": "#F4E7ED",
+      "dark": "#4a4253"
+    },
+    "--dsw-alias-markdown-inline-code": {
+      "light": "#4a425314",
+      "dark": "#4a425340"
+    },
+    "--dsw-alias-markdown-tag": {
+      "light": "#62548A",
+      "dark": "#A699C1"
+    },
+    "--dsw-alias-markdown-citation": {
+      "light": "#4F6B99",
+      "dark": "#8FA8CD"
+    },
+    "--dsw-alias-markdown-placeholder": {
+      "light": "#4a425314",
+      "dark": "#4a425340"
+    },
+    "--dsw-alias-markdown-code-segment-selected": {
+      "light": "#8FA8CD33",
+      "dark": "#8FA8CD33"
+    },
+    "--dsw-alias-markdown-code-segment-unselected": {
+      "light": "#4a425314",
+      "dark": "#4a425340"
+    },
+    "--dsw-alias-code-diff-added": {
+      "light": "#2F6B45",
+      "dark": "#BCE7C6"
+    },
+    "--dsw-alias-code-diff-deleted": {
+      "light": "#A34A3E",
+      "dark": "#D48F83"
+    },
+    "--dsw-alias-file-diff-added-bg": {
+      "light": "#2F6B4514",
+      "dark": "#BCE7C61A"
+    },
+    "--dsw-alias-file-diff-deleted-bg": {
+      "light": "#A34A3E14",
+      "dark": "#D48F831A"
+    },
+    "--dsw-alias-file-diff-added-gutter": {
+      "light": "#2F6B4533",
+      "dark": "#BCE7C633"
+    },
+    "--dsw-alias-file-diff-deleted-gutter": {
+      "light": "#A34A3E33",
+      "dark": "#D48F8333"
+    },
+    "--dsw-alias-file-diff-added-marker": {
+      "light": "#2F6B45",
+      "dark": "#BCE7C6"
+    },
+    "--dsw-alias-file-diff-deleted-marker": {
+      "light": "#A34A3E",
+      "dark": "#E8A79B"
+    },
+    "--dsw-alias-settings-card-fill": {
+      "light": "#FFF8FB",
+      "dark": "#4a425326"
+    },
+    "--dsw-alias-settings-card-stroke": {
+      "light": "#4a425326",
+      "dark": "#4a425340"
+    },
+    "--dsw-alias-scrollbar-bg-l1": {
+      "light": "#4a425326",
+      "dark": "#4a425340"
+    },
+    "--dsw-alias-scrollbar-bg-l2": {
+      "light": "#4a425314",
+      "dark": "#4a425326"
+    },
+    "--dsw-alias-scrollbar-hover-l1": {
+      "light": "#4a425340",
+      "dark": "#4a425380"
+    },
+    "--dsw-alias-scrollbar-hover-l2": {
+      "light": "#4a425326",
+      "dark": "#4a425360"
+    },
+    "--dsw-alias-menu-icon": {
+      "light": "#6E6875",
+      "dark": "#A5AAB2"
+    },
+    "--dsw-alias-menu-group-header-fill": {
+      "light": "#FBEEF3",
+      "dark": "#4a4253"
+    },
+    "--dsw-alias-tooltip-bg": {
+      "light": "#101113",
+      "dark": "#101113"
+    },
+    "--dsw-alias-tooltip-key-bg": {
+      "light": "#4a4253",
+      "dark": "#4a4253"
+    },
+    "--dsw-alias-toast-bg": {
+      "light": "#101113",
+      "dark": "#101113"
+    },
+    "--dsw-alias-toast-label": {
+      "light": "#FFF0F5",
+      "dark": "#D0E0F0"
+    },
+    "--dsw-alias-turn-trigger-bg": {
+      "light": "#4a425314",
+      "dark": "#4a425340"
+    },
+    "--dsw-alias-turn-trigger-bg-hover": {
+      "light": "#4a425324",
+      "dark": "#4a425360"
+    },
+    "--dsw-alias-bg-skeleton": {
+      "light": "#4a425320",
+      "dark": "#4a425340"
+    },
+    "--dsw-alias-bg-multi-select": {
+      "light": "#8FA8CD33",
+      "dark": "#8FA8CD33"
+    },
+    "--dsw-alias-bg-document-selection": {
+      "light": "#8FA8CD40",
+      "dark": "#8FA8CD40"
+    },
+    "--dsw-alias-bg-document-preview": {
+      "light": "#FFF8FB",
+      "dark": "#101113"
+    },
+    "--dsw-alias-bg-module-platform": {
+      "light": "#4a425314",
+      "dark": "#4a425326"
+    },
+    "--dsw-alias-border-inverted": {
+      "light": "#00000000",
+      "dark": "#FFF0F526"
+    },
+    "--dsw-alias-border-inverted2": {
+      "light": "#00000000",
+      "dark": "#FFF0F533"
+    },
+    "--dsw-alias-border-l2-darkmode-thin": {
+      "light": "#4a425340",
+      "dark": "#4a425340"
+    },
+    "--dsw-alias-brand-primary-invert": {
+      "light": "#101113",
+      "dark": "#FFF0F5"
+    },
+    "--dsw-alias-label-primary-inverted": {
+      "light": "#FFF0F5",
+      "dark": "#101113"
+    },
+    "--dsw-alias-onboarding-accent": {
+      "light": "#6F87B5",
+      "dark": "#8FA8CD"
+    },
+    "--dsw-alias-onboarding-card-fill": {
+      "light": "#FBEEF3",
+      "dark": "#4a4253"
+    },
+    "--dsw-alias-onboarding-checkbox-border": {
+      "light": "#4a425359",
+      "dark": "#4a425380"
+    },
+    "--dsw-alias-onboarding-secondary-fill": {
+      "light": "#4a425314",
+      "dark": "#4a425326"
+    },
+    "--dsw-specific-bubble": {
+      "light": "#FBEEF3",
+      "dark": "#4a4253"
+    },
+    "--dsw-specific-bubble-highlight": {
+      "light": "#8FA8CD33",
+      "dark": "#8FA8CD33"
+    },
+    "--dsw-specific-input-major": {
+      "light": "#FFF8FB",
+      "dark": "#101113"
+    },
+    "--dsw-specific-login-input": {
+      "light": "#4a425314",
+      "dark": "#4a425326"
+    },
+    "--dsw-specific-menu": {
+      "light": "#FFF8FB",
+      "dark": "#101113"
+    },
+    "--dsw-specific-selector": {
+      "light": "#FBEEF3",
+      "dark": "#4a4253"
+    },
+    "--dsw-specific-sidebar-fill": {
+      "light": "#F7EAF0",
+      "dark": "#101113"
+    },
+    "--dsw-specific-sidebar-nav-item-hover": {
+      "light": "#4a425314",
+      "dark": "#4a425340"
+    },
+    "--dsw-specific-sidebar-nav-item-active": {
+      "light": "#4a425324",
+      "dark": "#4a425360"
+    },
+    "--dsw-specific-sidebar-nav-item-active-accent": {
+      "light": "#6F87B5",
+      "dark": "#8FA8CD"
+    },
+    "--dsw-specific-tip": {
+      "light": "#FBEEF3",
+      "dark": "#4a4253"
+    },
+    "--dsw-alias-brand-primary-new-colorprimary-new-color": {
+      "light": "#6F87B5",
+      "dark": "#8FA8CD"
+    },
+    "--dsw-alias-button-info-fill": {
+      "light": "#6F87B5",
+      "dark": "#8FA8CD"
+    },
+    "--dsw-alias-button-info-hover": {
+      "light": "#8FA8CD",
+      "dark": "#B4CBEA"
+    },
+    "--dsw-alias-button-tool-bar-fill": {
+      "light": "#4a425314",
+      "dark": "#4a425340"
+    },
+    "--dsw-alias-button-tool-bar-fill-invisible": {
+      "light": "#4a42530A",
+      "dark": "#4a425314"
+    },
+    "--dsw-alias-button-tool-bar-hover": {
+      "light": "#4a425324",
+      "dark": "#4a425360"
+    },
+    "--dsw-alias-bg-mask-1": {
+      "light": "#1011133D",
+      "dark": "#00000080"
+    },
+    "--dsw-alias-bg-mask-2": {
+      "light": "#1011131F",
+      "dark": "#00000033"
+    },
+    "--dsw-alias-bg-mask-3": {
+      "light": "#1011137A",
+      "dark": "#0000007A"
+    },
+    "--dsw-alias-bg-mask-drop": {
+      "light": "#FFF0F5B3",
+      "dark": "#272730B3"
+    },
+    "--dsw-alias-bg-mask-photo": {
+      "light": "#000000E0",
+      "dark": "#000000E0"
+    },
+    "--dsw-alias-state-warn-label": {
+      "light": "#101113",
+      "dark": "#FFF0F5"
+    },
+    "--dsw-alias-state-warn-tertiary": {
+      "light": "#9E554626",
+      "dark": "#E8A79B33"
+    },
+    "--dsw-alias-state-success-tertiary": {
+      "light": "#2F6B4526",
+      "dark": "#BCE7C633"
+    },
+    "--dsw-alias-label-shimmer": {
+      "light": "#10111326",
+      "dark": "#D0E0F580"
+    },
+    "--dsw-alias-label-deep-diving": {
+      "light": "#4A4452",
+      "dark": "#BAC3BF"
+    },
+    "--dsw-alias-label-deep-diving-shimmer": {
+      "light": "#8FA8CD40",
+      "dark": "#D0E0F580"
+    },
+    "--dsw-alias-label-document-preview": {
+      "light": "#6E6875",
+      "dark": "#A5AAB2"
+    },
+    "--dsh-content-font-size": {
+      "light": "16px",
+      "dark": "16px"
+    },
+    "--dsh-code-font-size": {
+      "light": "15px",
+      "dark": "15px"
+    }
+  },
+  "advancedCss": "/* =========================================================================\n   XEN THEME — hoja de estilos de tipografía y detalles del documento.\n   -------------------------------------------------------------------------\n   Este archivo lo inyecta el plugin como una hoja de estilos propia cuando\n   el tema está activo; al desactivarlo se retira por completo. Los colores\n   de interfaz NO viven aquí: vienen de theme.json y se aplican a través del\n   servicio de temas (ctx.theme). Aquí solo va lo que los tokens de color no\n   cubren: familias tipográficas, interlineado, tamaños derivados, selección\n   de texto y ligaduras del código.\n\n   Puedes editar este archivo con el plugin instalado y recargar la página:\n   el Host sirve siempre la versión actual del archivo.\n   ========================================================================= */\n\n/* -------------------------------------------------------------------------\n   1. Variables propias del tema.\n   Las familias y el interlineado se declaran una sola vez para que el resto\n   de reglas (y quien personalice el tema) tenga un único punto de cambio.\n   ------------------------------------------------------------------------- */\n:root {\n  --xen-font-ui: system-ui, -apple-system, \"Segoe UI\", sans-serif;\n  --xen-font-code: \"JetBrains Mono\", \"Fira Code\", \"Cascadia Code\", monospace;\n  --xen-line-height: 1.6;\n  --xen-base-size: 24px;\n  --xen-code-size: 22px;\n\n  /* Selección de texto en modo claro (el modo oscuro la redefine abajo). */\n  --xen-selection-bg: #E8A79B;\n  --xen-selection-fg: #101113;\n  --xen-cursor: #101113;\n  --xen-cursor-text: #FFF0F5;\n}\n\n/* Selección y cursor del modo oscuro: los valores exactos de XEN. */\nbody[data-ds-dark-theme] {\n  --xen-selection-bg: #4a4253;\n  --xen-selection-fg: #FFF0F5;\n  --xen-cursor: #D0E0F0;\n  --xen-cursor-text: #101113;\n}\n\n/* -------------------------------------------------------------------------\n   2. Familias tipográficas que consume el sistema de diseño.\n   `--dsw-font-family` es la familia de la interfaz y del texto de lectura;\n   `--ds-font-family-code` es la de bloques de código, código en línea y\n   diffs. Se declaran en `html body` para que el valor del tema prevalezca sobre\n   el valor por defecto de `:root` sin escribir en la preferencia guardada:\n   mientras XEN está activo sustituye visualmente la familia elegida, y al\n   desactivarlo vuelve a verse la preferencia del usuario.\n   ------------------------------------------------------------------------- */\nhtml body {\n  --dsw-font-family: var(--xen-font-ui);\n  --ds-font-family-code: var(--xen-font-code);\n\n  /* Interlineado base: 1.6. Las filas de la interfaz conservan sus alturas\n     fijas para no romper la geometría; el texto de lectura y el código usan\n     este valor a través de los atajos `font` de abajo. */\n  line-height: var(--xen-line-height);\n  font-family: var(--xen-font-ui);\n}\n\n/* -------------------------------------------------------------------------\n   3. Atajos `font` del markdown.\n   DeepSeek Harness define estos atajos en `:root` con tamaños fijos\n   (14px/24px, 11px/19px...). Aquí los reescribimos con el interlineado 1.6\n   y dejamos que el tamaño lo decida Ajustes → Apariencia: las variables\n   `--dsh-content-font-size` y `--dsh-code-font-size` las escribe el cliente.\n   `--xen-base-size` y `--xen-code-size` son solo el respaldo cuando esas\n   variables no existen; no imponen ningún tamaño.\n\n   Las familias del stack deben estar instaladas en la máquina; si no, el\n   navegador usa la siguiente familia de la lista.\n   ------------------------------------------------------------------------- */\nhtml body {\n  --dsw-font-markdown-base: var(--dsh-content-font-size, var(--xen-base-size)) / var(--xen-line-height) var(--dsw-font-family);\n  --dsw-font-markdown-base-strong: 600 var(--dsh-content-font-size, var(--xen-base-size)) / var(--xen-line-height) var(--dsw-font-family);\n  --dsw-font-markdown-code: var(--dsh-code-font-size, var(--xen-code-size)) / var(--xen-line-height) var(--ds-font-family-code);\n  --dsw-font-markdown-code-block: var(--dsh-code-font-size, var(--xen-code-size)) / var(--xen-line-height) var(--ds-font-family-code);\n  --dsw-font-markdown-code-block-small: 13px / var(--xen-line-height) var(--ds-font-family-code);\n}\n\n/* -------------------------------------------------------------------------\n   4. Detalles de código y selección.\n   Las ligaduras de JetBrains Mono/Fira Code son opcionales para quien no\n   las tenga instaladas; los navegadores ignoran la propiedad si la fuente\n   no las ofrece. La selección usa los colores pedidos en ambos esquemas.\n   ------------------------------------------------------------------------- */\ncode,\npre,\nkbd,\nsamp {\n  font-family: var(--ds-font-family-code);\n  font-variant-ligatures: contextual common-ligatures;\n}\n\n::selection {\n  background: var(--xen-selection-bg);\n  color: var(--xen-selection-fg);\n}\n\n/* El cursor del terminal de barra lateral lo deriva DeepSeek Harness del\n   color de texto y del fondo, así que sigue a XEN automáticamente. Estas\n   variables quedan disponibles por si otra hoja de estilos las consume. */\nbody {\n  --xen-terminal-cursor: var(--xen-cursor);\n  --xen-terminal-cursor-accent: var(--xen-cursor-text);\n}\n\n/* -------------------------------------------------------------------------\n   5. Escala de la barra lateral.\n   DSH no expone un tamaño de letra para la barra lateral en Apariencia y sus\n   componentes usan 13/14 px fijos. Subimos un punto el contenido principal\n   (lista de paneles, sesiones y ajustes) sin tocar el resto de la interfaz.\n   Ajusta --xen-sidebar-font-size si lo quieres más grande: 15px es sutil,\n   16px es un paso claro. La altura de línea acompaña al título.\n   ------------------------------------------------------------------------- */\n:root {\n  --xen-sidebar-font-size: 21px;\n  --xen-sidebar-line-height: 24px;\n}\n\n/* El scrollport solo existe en la barra lateral, así que esta regla no toca\n   el resto de la interfaz. */\n[data-sidebar-scrollport] {\n  font-size: var(--xen-sidebar-font-size);\n}\n\n/* Los títulos de sesión/proyecto llevan 14px explícitos y no heredan. */\n[data-sidebar-scrollport] [class*=\"_title_\"] {\n  font-size: var(--xen-sidebar-font-size);\n  line-height: var(--xen-sidebar-line-height);\n}\n\n/* La fila de ajustes y la cuenta viven fuera del scrollport. */\n[class*=\"_footArea_\"] {\n  font-size: var(--xen-sidebar-font-size);\n}\n\n/* -------------------------------------------------------------------------\n   6. Ajustes finos del texto en pantallas estrechas.\n   En ventanas angostas se mantiene el tamaño base para no reducir la\n   legibilidad; solo se evita que el código en línea desborde su contenedor.\n   ------------------------------------------------------------------------- */\n@media (max-width: 767px) {\n  code {\n    overflow-wrap: anywhere;\n  }\n}\n\n\n/* XEN THEME — ANSI palette and Shiki code-token colors */\n:root:root {\n  --shiki-foreground: #101113;\n  --shiki-background: #FBEEF3;\n  --shiki-token-comment: #6E6875;\n  --shiki-token-constant: #7A5A54;\n  --shiki-token-string: #4F5A53;\n  --shiki-token-string-expression: #3F4A43;\n  --shiki-token-keyword: #62548A;\n  --shiki-token-parameter: #4C6B7D;\n  --shiki-token-function: #4B3F73;\n  --shiki-token-punctuation: #5A5A64;\n  --shiki-token-link: #4F6B99;\n  --xen-ansi-0: #101113;\n  --xen-ansi-1: #A34A3E;\n  --xen-ansi-2: #4C6B7D;\n  --xen-ansi-3: #7A5A54;\n  --xen-ansi-4: #4F6B99;\n  --xen-ansi-5: #62548A;\n  --xen-ansi-6: #4F5A53;\n  --xen-ansi-7: #5A5A64;\n  --xen-ansi-8: #4A4452;\n  --xen-ansi-9: #C2675A;\n  --xen-ansi-10: #5F7E93;\n  --xen-ansi-11: #A88684;\n  --xen-ansi-12: #3F5C86;\n  --xen-ansi-13: #4B3F73;\n  --xen-ansi-14: #3F4A43;\n  --xen-ansi-15: #101113;\n}\nbody[data-ds-dark-theme][data-ds-dark-theme] {\n  --shiki-foreground: #D0E0F0;\n  --shiki-background: #101113;\n  --shiki-token-comment: #A5AAB2;\n  --shiki-token-constant: #D1B2B0;\n  --shiki-token-string: #9FA6A1;\n  --shiki-token-string-expression: #BAC3BF;\n  --shiki-token-keyword: #A699C1;\n  --shiki-token-parameter: #8FA6B4;\n  --shiki-token-function: #C3B6DE;\n  --shiki-token-punctuation: #A5AAB2;\n  --shiki-token-link: #8FA8CD;\n  --xen-ansi-0: #101113;\n  --xen-ansi-1: #D48F83;\n  --xen-ansi-2: #8FA6B4;\n  --xen-ansi-3: #D1B2B0;\n  --xen-ansi-4: #8FA8CD;\n  --xen-ansi-5: #A699C1;\n  --xen-ansi-6: #9FA6A1;\n  --xen-ansi-7: #A5AAB2;\n  --xen-ansi-8: #4a4253;\n  --xen-ansi-9: #E8A79B;\n  --xen-ansi-10: #BCE7C6;\n  --xen-ansi-11: #FFF0F5;\n  --xen-ansi-12: #B4CBEA;\n  --xen-ansi-13: #C3B6DE;\n  --xen-ansi-14: #BAC3BF;\n  --xen-ansi-15: #D0E0F0;\n}\n",
+  "rev": 1795192576353
+}

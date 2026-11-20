@@ -1,0 +1,15 @@
+# XEN THEME — bundle layer.
+#
+# `dsh.bundle.patch` lets the plugin installer reconcile `dsh.profile.bundles`
+# and mount this row automatically when the package is added:
+#
+#   dsh plugin --profile desktop add github:xenwithcode/xen-theme
+#   dsh plugin --profile desktop remove xen-theme
+#
+# Disable it without uninstalling by overriding the row in the profile patch:
+#
+#   - id: xen-theme
+#     disabled: true
+- insert:
+    - id: xen-theme
+      name: xen-theme

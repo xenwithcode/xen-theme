@@ -1,0 +1,148 @@
+/* =========================================================================
+   XEN THEME — hoja de estilos de tipografía y detalles del documento.
+   -------------------------------------------------------------------------
+   Este archivo lo inyecta el plugin como una hoja de estilos propia cuando
+   el tema está activo; al desactivarlo se retira por completo. Los colores
+   de interfaz NO viven aquí: vienen de theme.json y se aplican a través del
+   servicio de temas (ctx.theme). Aquí solo va lo que los tokens de color no
+   cubren: familias tipográficas, interlineado, tamaños derivados, selección
+   de texto y ligaduras del código.
+
+   Puedes editar este archivo con el plugin instalado y recargar la página:
+   el Host sirve siempre la versión actual del archivo.
+   ========================================================================= */
+
+/* -------------------------------------------------------------------------
+   1. Variables propias del tema.
+   Las familias y el interlineado se declaran una sola vez para que el resto
+   de reglas (y quien personalice el tema) tenga un único punto de cambio.
+   ------------------------------------------------------------------------- */
+:root {
+  --xen-font-ui: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --xen-font-code: "JetBrains Mono", "Fira Code", "Cascadia Code", monospace;
+  --xen-line-height: 1.6;
+  --xen-base-size: 24px;
+  --xen-code-size: 22px;
+
+  /* Selección de texto en modo claro (el modo oscuro la redefine abajo). */
+  --xen-selection-bg: #E8A79B;
+  --xen-selection-fg: #101113;
+  --xen-cursor: #101113;
+  --xen-cursor-text: #FFF0F5;
+}
+
+/* Selección y cursor del modo oscuro: los valores exactos de XEN. */
+body[data-ds-dark-theme] {
+  --xen-selection-bg: #4a4253;
+  --xen-selection-fg: #FFF0F5;
+  --xen-cursor: #D0E0F0;
+  --xen-cursor-text: #101113;
+}
+
+/* -------------------------------------------------------------------------
+   2. Familias tipográficas que consume el sistema de diseño.
+   `--dsw-font-family` es la familia de la interfaz y del texto de lectura;
+   `--ds-font-family-code` es la de bloques de código, código en línea y
+   diffs. Se declaran en `html body` para que el valor del tema prevalezca sobre
+   el valor por defecto de `:root` sin escribir en la preferencia guardada:
+   mientras XEN está activo sustituye visualmente la familia elegida, y al
+   desactivarlo vuelve a verse la preferencia del usuario.
+   ------------------------------------------------------------------------- */
+html body {
+  --dsw-font-family: var(--xen-font-ui);
+  --ds-font-family-code: var(--xen-font-code);
+
+  /* Interlineado base: 1.6. Las filas de la interfaz conservan sus alturas
+     fijas para no romper la geometría; el texto de lectura y el código usan
+     este valor a través de los atajos `font` de abajo. */
+  line-height: var(--xen-line-height);
+  font-family: var(--xen-font-ui);
+}
+
+/* -------------------------------------------------------------------------
+   3. Atajos `font` del markdown.
+   DeepSeek Harness define estos atajos en `:root` con tamaños fijos
+   (14px/24px, 11px/19px...). Aquí los reescribimos con el interlineado 1.6
+   y dejamos que el tamaño lo decida Ajustes → Apariencia: las variables
+   `--dsh-content-font-size` y `--dsh-code-font-size` las escribe el cliente.
+   `--xen-base-size` y `--xen-code-size` son solo el respaldo cuando esas
+   variables no existen; no imponen ningún tamaño.
+
+   Las familias del stack deben estar instaladas en la máquina; si no, el
+   navegador usa la siguiente familia de la lista.
+   ------------------------------------------------------------------------- */
+html body {
+  --dsw-font-markdown-base: var(--dsh-content-font-size, var(--xen-base-size)) / var(--xen-line-height) var(--dsw-font-family);
+  --dsw-font-markdown-base-strong: 600 var(--dsh-content-font-size, var(--xen-base-size)) / var(--xen-line-height) var(--dsw-font-family);
+  --dsw-font-markdown-code: var(--dsh-code-font-size, var(--xen-code-size)) / var(--xen-line-height) var(--ds-font-family-code);
+  --dsw-font-markdown-code-block: var(--dsh-code-font-size, var(--xen-code-size)) / var(--xen-line-height) var(--ds-font-family-code);
+  --dsw-font-markdown-code-block-small: 13px / var(--xen-line-height) var(--ds-font-family-code);
+}
+
+/* -------------------------------------------------------------------------
+   4. Detalles de código y selección.
+   Las ligaduras de JetBrains Mono/Fira Code son opcionales para quien no
+   las tenga instaladas; los navegadores ignoran la propiedad si la fuente
+   no las ofrece. La selección usa los colores pedidos en ambos esquemas.
+   ------------------------------------------------------------------------- */
+code,
+pre,
+kbd,
+samp {
+  font-family: var(--ds-font-family-code);
+  font-variant-ligatures: contextual common-ligatures;
+}
+
+::selection {
+  background: var(--xen-selection-bg);
+  color: var(--xen-selection-fg);
+}
+
+/* El cursor del terminal de barra lateral lo deriva DeepSeek Harness del
+   color de texto y del fondo, así que sigue a XEN automáticamente. Estas
+   variables quedan disponibles por si otra hoja de estilos las consume. */
+body {
+  --xen-terminal-cursor: var(--xen-cursor);
+  --xen-terminal-cursor-accent: var(--xen-cursor-text);
+}
+
+/* -------------------------------------------------------------------------
+   5. Escala de la barra lateral.
+   DSH no expone un tamaño de letra para la barra lateral en Apariencia y sus
+   componentes usan 13/14 px fijos. Subimos un punto el contenido principal
+   (lista de paneles, sesiones y ajustes) sin tocar el resto de la interfaz.
+   Ajusta --xen-sidebar-font-size si lo quieres más grande: 15px es sutil,
+   16px es un paso claro. La altura de línea acompaña al título.
+   ------------------------------------------------------------------------- */
+:root {
+  --xen-sidebar-font-size: 21px;
+  --xen-sidebar-line-height: 24px;
+}
+
+/* El scrollport solo existe en la barra lateral, así que esta regla no toca
+   el resto de la interfaz. */
+[data-sidebar-scrollport] {
+  font-size: var(--xen-sidebar-font-size);
+}
+
+/* Los títulos de sesión/proyecto llevan 14px explícitos y no heredan. */
+[data-sidebar-scrollport] [class*="_title_"] {
+  font-size: var(--xen-sidebar-font-size);
+  line-height: var(--xen-sidebar-line-height);
+}
+
+/* La fila de ajustes y la cuenta viven fuera del scrollport. */
+[class*="_footArea_"] {
+  font-size: var(--xen-sidebar-font-size);
+}
+
+/* -------------------------------------------------------------------------
+   6. Ajustes finos del texto en pantallas estrechas.
+   En ventanas angostas se mantiene el tamaño base para no reducir la
+   legibilidad; solo se evita que el código en línea desborde su contenedor.
+   ------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+  code {
+    overflow-wrap: anywhere;
+  }
+}

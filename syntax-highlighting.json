@@ -1,0 +1,112 @@
+{
+  "$comment": "XEN ANSI palette and Shiki code-token colors. ansi.* holds the 16 ANSI slots (published as --xen-ansi-N); tokens.* maps them to the --shiki-* variables the Web client reads; highContrast.* overrides them. mapping documents the intended slot per token.",
+  "name": "XEN ANSI",
+  "description": "ANSI slot palette plus the Shiki CSS variables DeepSeek Harness reads for fenced code blocks. The Client injects these as --xen-ansi-* and --shiki-* custom properties.",
+  "ansi": {
+    "dark": [
+      "#101113",
+      "#D48F83",
+      "#8FA6B4",
+      "#D1B2B0",
+      "#8FA8CD",
+      "#A699C1",
+      "#9FA6A1",
+      "#A5AAB2",
+      "#4a4253",
+      "#E8A79B",
+      "#BCE7C6",
+      "#FFF0F5",
+      "#B4CBEA",
+      "#C3B6DE",
+      "#BAC3BF",
+      "#D0E0F0"
+    ],
+    "light": [
+      "#101113",
+      "#A34A3E",
+      "#4C6B7D",
+      "#7A5A54",
+      "#4F6B99",
+      "#62548A",
+      "#4F5A53",
+      "#5A5A64",
+      "#4A4452",
+      "#C2675A",
+      "#5F7E93",
+      "#A88684",
+      "#3F5C86",
+      "#4B3F73",
+      "#3F4A43",
+      "#101113"
+    ]
+  },
+  "tokens": {
+    "dark": {
+      "--shiki-foreground": "#D0E0F0",
+      "--shiki-background": "#101113",
+      "--shiki-token-comment": "#A5AAB2",
+      "--shiki-token-constant": "#D1B2B0",
+      "--shiki-token-string": "#9FA6A1",
+      "--shiki-token-string-expression": "#BAC3BF",
+      "--shiki-token-keyword": "#A699C1",
+      "--shiki-token-parameter": "#8FA6B4",
+      "--shiki-token-function": "#C3B6DE",
+      "--shiki-token-punctuation": "#A5AAB2",
+      "--shiki-token-link": "#8FA8CD"
+    },
+    "light": {
+      "--shiki-foreground": "#101113",
+      "--shiki-background": "#FBEEF3",
+      "--shiki-token-comment": "#6E6875",
+      "--shiki-token-constant": "#7A5A54",
+      "--shiki-token-string": "#4F5A53",
+      "--shiki-token-string-expression": "#3F4A43",
+      "--shiki-token-keyword": "#62548A",
+      "--shiki-token-parameter": "#4C6B7D",
+      "--shiki-token-function": "#4B3F73",
+      "--shiki-token-punctuation": "#5A5A64",
+      "--shiki-token-link": "#4F6B99"
+    }
+  },
+  "highContrast": {
+    "dark": {
+      "--shiki-foreground": "#FFF0F5",
+      "--shiki-background": "#101113",
+      "--shiki-token-comment": "#BAC3BF",
+      "--shiki-token-constant": "#FFF0F5",
+      "--shiki-token-string": "#BAC3BF",
+      "--shiki-token-string-expression": "#BCE7C6",
+      "--shiki-token-keyword": "#C3B6DE",
+      "--shiki-token-parameter": "#BCE7C6",
+      "--shiki-token-function": "#C3B6DE",
+      "--shiki-token-punctuation": "#D0E0F0",
+      "--shiki-token-link": "#B4CBEA"
+    },
+    "light": {
+      "--shiki-foreground": "#101113",
+      "--shiki-background": "#FBEEF3",
+      "--shiki-token-comment": "#4A4452",
+      "--shiki-token-constant": "#6E4F4D",
+      "--shiki-token-string": "#3F4A43",
+      "--shiki-token-string-expression": "#2E3833",
+      "--shiki-token-keyword": "#4B3F73",
+      "--shiki-token-parameter": "#35566B",
+      "--shiki-token-function": "#3A2F5C",
+      "--shiki-token-punctuation": "#3A3A44",
+      "--shiki-token-link": "#3F5C86"
+    }
+  },
+  "mapping": {
+    "foreground": "15",
+    "background": "0",
+    "comment": "7",
+    "constant": "3",
+    "string": "6",
+    "string-expression": "14",
+    "keyword": "5",
+    "parameter": "2",
+    "function": "13",
+    "punctuation": "7",
+    "link": "4"
+  }
+}

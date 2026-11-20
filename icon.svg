@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+  <!-- XEN THEME mark: one blue-gray stroke and one magenta stroke crossing,
+       tinted so the glyph stays readable on both light and dark plugin tiles. -->
+  <defs>
+    <linearGradient id="xen-icon-blue" x1="7" y1="7" x2="29" y2="29" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#B4CBEA"/>
+      <stop offset="1" stop-color="#6F87B5"/>
+    </linearGradient>
+    <linearGradient id="xen-icon-magenta" x1="29" y1="7" x2="7" y2="29" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C3B6DE"/>
+      <stop offset="1" stop-color="#8A76B8"/>
+    </linearGradient>
+  </defs>
+  <path d="M7.5 7.5 28.5 28.5" stroke="url(#xen-icon-blue)" stroke-width="5.2" stroke-linecap="round"/>
+  <path d="M28.5 7.5 7.5 28.5" stroke="url(#xen-icon-magenta)" stroke-width="5.2" stroke-linecap="round"/>
+</svg>
